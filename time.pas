@@ -1,3 +1,6 @@
 ﻿##
-var yearIsLeap := ReadInteger('Введите год, а я определю, високосный он или нет:');
-Println($'Является ли год високосным? Ответ: {yearIsLeap.Divs(4) and (yearIsLeap.NotDivs(100) or yearIsLeap.Divs(400))}');
+var year := ReadInteger('Введите год, а я определю, сколько в нём дней:');
+if year.Divs(4) and (year.NotDivs(100) or year.Divs(400)) then
+  Println('В этом году 366 дней')
+else
+  Println('В этом году 365 дней');
