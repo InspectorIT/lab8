@@ -7,4 +7,3 @@ case clock of
   else
     Println('Доброй ночи, мир!');
 end;
-{
